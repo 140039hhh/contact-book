@@ -128,7 +128,7 @@ contacts.example.com {
 
 ## 在线访问
 
-https://你的实际地址.onrender.com
+https://contact-book-ufz9.onrender.com
 
 部署于 Render 免费服务。首次访问可能需要等待唤醒；
 SQLite 数据可能在服务休眠、重启或重新部署后重置。
