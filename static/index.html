@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>联络 · 我的通讯录</title><link rel="stylesheet" href="/style.css"></head>
+<body><aside><div class="brand">联络<span>CONTACT BOOK</span></div><p>让重要的人，随时找到。</p><button id="all" class="nav active">所有联系人</button><button id="favorites" class="nav">★ 我的收藏</button><div class="aside-foot">私人通讯录<br>简单记录，长久联系</div></aside>
+<main><header><div><small>YOUR PEOPLE, ONE PLACE</small><h1 id="heading">所有联系人</h1><p id="count">正在读取…</p></div><button id="create">＋ 新建联系人</button></header>
+<section class="toolbar"><input id="search" aria-label="搜索联系人" placeholder="搜索姓名、电话、邮箱或备注…"><button id="import" class="secondary">导入 Excel</button><button id="export" class="secondary">导出 Excel</button><button id="login" class="secondary">访问密码</button><input id="file" type="file" accept=".xlsx" hidden></section>
+<p id="message" role="status"></p><section id="cards" class="cards"></section><div id="empty" hidden>还没有联系人，点击「新建联系人」开始记录。<br>也可以导出空白 Excel 作为导入模板。</div>
+<footer>数据保存在服务器数据库中 · Excel 导入会新增联系人</footer></main>
+<dialog id="editor"><form id="form"><h2 id="form-title">新建联系人</h2><label>姓名<input id="name" maxlength="100" required></label><label class="check"><input id="favorite" type="checkbox">收藏联系人</label><h3>联系方式</h3><div id="methods"></div><button type="button" id="add-method" class="secondary">＋ 添加联系方式</button><label>备注<textarea id="notes" maxlength="5000" rows="3"></textarea></label><div class="actions"><button type="button" id="cancel" class="secondary">取消</button><button type="submit">保存联系人</button></div></form></dialog><script src="/app.js"></script></body></html>
