@@ -1,0 +1,12 @@
+services:
+  contacts:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      APP_PASSWORD: ${APP_PASSWORD:?Please set APP_PASSWORD in .env}
+    volumes:
+      - contacts-data:/data
+volumes:
+  contacts-data:
